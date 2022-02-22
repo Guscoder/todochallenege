@@ -1,0 +1,34 @@
+$primary_blue: hsl(220, 98%, 61%);
+$check_background: linear-gradient(
+  to right,
+  hsl(192, 100%, 67%),
+  hsl(280, 87%, 65%)
+);
+
+// light theme
+$very_light_gray: hsl(0, 0%, 98%);
+$very_light_grayish_blue: hsl(236, 33%, 92%);
+$light_grayish_blue: hsl(233, 11%, 84%);
+$dark_grayish_blue: hsl(236, 9%, 61%);
+$very_dark_grayish_blue: hsl(235, 19%, 35%);
+
+// dark theme
+$very-dark_blue: hsl(235, 21%, 11%);
+$very_dark_desaturatedDblue: hsl(235, 24%, 19%);
+$light_grayish_blue: hsl(234, 39%, 85%);
+$light_grayish_blue_hover: hsl(236, 33%, 92%); //hover
+$dark_grayish_blue: hsl(234, 11%, 52%);
+$very_dark_grayish_blue: hsl(233, 14%, 35%);
+$very_dark_grayish_blue2: hsl(237, 14%, 26%);
+
+// sizes
+$main_font_size: 18px;
+$option_font_sizes: 11px;
+
+//states
+$active_state_color: $primary_blue;
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+$main-font: 'Josefin Sans', serif;

@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+.input-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 18px 0 18px 0;
+  border-radius: 5px;
+  input {
+    width: 85%;
+    border: none;
+    font-size: $main_font_size;
+    color: $very_dark_grayish_blue;
+    caret-color: $primary_blue;
+    font-family: $main-font, sans-serif;
+  }
+  input[type='text'] {
+    padding-top: 5px;
+  }
+  input::placeholder {
+    color: $light_grayish_blue;
+  }
+  input:focus {
+    outline: none;
+  }
+  .input-check-circle {
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px;
+    align-self: center;
+    justify-self: left;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .input-check-circle:hover {
+    border: 2px solid $primary_blue;
+  }
+  .input-check-circle-marked {
+    background-color: $check_background;
+    background: $check_background;
+    color: white;
+    font-size: 12px;
+  }
+}

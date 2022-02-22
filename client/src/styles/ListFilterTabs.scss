@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.filter-tabs {
+  font-size: $option_font_sizes;
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+  color: $dark_grayish_blue;
+  span:last-child {
+    padding: 0 5px;
+  }
+  .active {
+    color: $active_state_color;
+    font-weight: bold;
+  }
+  span:hover {
+    font-weight: 800;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 990px) {
+    font-size: $main_font_size;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.single_todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  .task-div {
+    display: flex;
+  }
+  .check_circle {
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px;
+    align-self: center;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .check_circle:hover {
+    border: 2px solid $primary_blue;
+  }
+  .unchecked {
+    display: none;
+  }
+  .checked {
+    display: inline-block;
+  }
+  .circle_completed {
+    background: $check_background;
+  }
+  .todo_itemname {
+    padding: 5px 10px;
+  }
+
+  .todo_completed {
+    text-decoration-line: line-through;
+    color: $light_grayish_blue;
+  }
+
+  .delete-button {
+    position: relative;
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+}

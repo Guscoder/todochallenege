@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+.options_panel {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: $option_font_sizes;
+  color: $dark_grayish_blue;
+  span {
+    padding: 0 5px;
+    cursor: pointer;
+  }
+  span:hover {
+    font-weight: 800;
+  }
+  @media only screen and (max-width: 990px) {
+    font-size: 14px;
+  }
+}
